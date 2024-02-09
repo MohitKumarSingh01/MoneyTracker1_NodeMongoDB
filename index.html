@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Money Tracker</h2>
+  <div class="balance">
+    <h3>Balance: <span id="balanceAmount">$0.00</span></h3>
+  </div>
+  <form id="transactionForm">
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" required>
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" step="0.01" required>
+    </div>
+    <button type="submit">Add Transaction</button>
+  </form>
+  <div id="transactionList">
+    <!-- Transaction items will be displayed here -->
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
